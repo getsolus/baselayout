@@ -1,7 +1,7 @@
 #!/bin/bash
 
 NAME=baselayout
-VERSION=1.6
+VERSION=1.7.1
 
 DIRNAME=$NAME-$VERSION
 
