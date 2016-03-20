@@ -7,3 +7,6 @@
 /bin/ksh
 /bin/zsh
 /bin/sash
+/bin/dash
+/usr/bin/dash
+/usr/bin/fish
