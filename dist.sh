@@ -3,13 +3,4 @@
 NAME=baselayout
 VERSION=1.8.0
 
-DIRNAME=$NAME-$VERSION
-
-if [ -d ../$DIRNAME ]; then
-    echo ../$DIRNAME already exists. Remove it first.
-    exit 1
-fi
-
-cp -r ../$NAME ../$DIRNAME
-tar czvf $DIRNAME.tar.gz ../$DIRNAME --exclude .git --exclude `basename $0`
-rm -rf ../$DIRNAME
+git archive -v --format=tar.gz -o baselayout-${VERSION}.tar.gz --prefix=baselayout-${VERSION}/ HEAD
