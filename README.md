@@ -1,4 +1,5 @@
 # Baselayout
 
-This repository contains the basic layout of the Solus Operating System filesystem.
-These files are required to create a usable Solus Operating System installation
+Defines the basic file system structure. Contains a bare handful of files necessary
+to bootstrap a new Solus system. Most of these files are disappearing over time
+as Solus transitions to a stateless implementation.
