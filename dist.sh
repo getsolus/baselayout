@@ -3,4 +3,8 @@
 NAME=baselayout
 VERSION=1.9.0
 
-git archive -v --format=tar.gz -o baselayout-${VERSION}.tar.gz --prefix=baselayout-${VERSION}/ HEAD
+# Fully reproducible
+tar --sort=name \
+    --mtime="@0" \
+    --owner=0 --group=0 --numeric-owner \
+    -acvf baselayout-${VERSION}.tar.zst -C root/ .
